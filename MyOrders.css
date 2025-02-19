@@ -1,0 +1,63 @@
+/* MyOrders.css */
+
+.my-orders-container {
+    max-width: 800px; /* Maximum width of the orders container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #ccc; /* Border around the container */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    text-align: center; /* Center the main title */
+    color: #333; /* Darker color for the title */
+}
+
+h3 {
+    margin-top: 30px; /* Space above each section title */
+    color: #555; /* Darker gray for subheadings */
+    border-bottom: 2px solid #ddd; /* Underline for subheadings */
+    padding-bottom: 10px; /* Space below the subheadings */
+}
+
+.order-section {
+    margin: 15px 0; /* Space between each order section */
+    padding: 15px; /* Padding inside each order section */
+    border: 1px solid #ddd; /* Border around each order */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* White background for order sections */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for order sections */
+}
+
+.order-products {
+    margin-top: 10px; /* Space above product list */
+}
+
+.product-item {
+    margin: 10px 0; /* Space between product items */
+    padding: 10px; /* Padding inside product items */
+    border: 1px solid #eee; /* Light border around product items */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fafafa; /* Light gray background for products */
+}
+
+.product-item h5 {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size for product names */
+    color: #333; /* Dark color for product names */
+}
+
+.product-item p {
+    margin: 5px 0; /* Space between paragraphs */
+    font-size: 14px; /* Font size for product details */
+    color: #666; /* Gray color for product details */
+}
+
+hr {
+    margin: 20px 0; /* Space above and below horizontal rules */
+    border: 0; /* Remove default border */
+    height: 1px; /* Height for the line */
+    background-color: #ddd; /* Color for the line */
+}

@@ -1,0 +1,94 @@
+.signin-page {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .form-container{
+    width: 300px;
+    color: #0b141e;
+  }
+  .form-container form {
+    margin-right: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    color: #634087;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  .input-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    background-color: #e2dbe8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .remember-me input {
+    margin-right: 5px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #634087;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .login-btn button:hover
+{
+  background-color: #32184c;
+}
+  
+  .login-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .login-footer a {
+    color: #634087;
+    text-decoration: none;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    color: #d43b20;
+    background-color: #fce4e4;
+    border: 1px solid #f5c6c6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  

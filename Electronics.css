@@ -1,0 +1,199 @@
+
+.product-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.product-card {
+  background-color: #f5f5f5;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 300px;
+  height: fit-content;
+  text-align: center;
+  padding: 20px;
+}
+.product-content
+{
+  width: 80%;
+  height: fit-content;
+  
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image img {
+  width: 80%;
+  height: 100%;
+  object-fit:cover;
+  cursor: pointer;
+}
+
+.product-details {
+  margin-top: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #1e1010;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-button {
+  background-color: #0e1a5d;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838;
+}
+
+
+
+/* Modal content wrapper */
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  z-index: 1001;
+}
+
+/* Modal background overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  overflow-y: auto; /* Enable scrolling */
+  margin-bottom: 50px;
+
+}
+
+/* Modal content container */
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto; /* Center the modal vertically with some margin */
+  max-height: 90vh; /* Restrict maximum height to 90% of the viewport */
+  overflow-y: auto; /* Enable scrolling within the modal */
+  position: relative;
+  
+}
+
+/* Close button */
+.modal-close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.modal-close-button:hover {
+  color: #541ee9;
+}
+
+/* Modal title */
+.modal-title {
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  
+}
+
+/* Slideshow container */
+.slideshow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Slideshow buttons */
+.slideshow-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.slideshow-button:hover {
+  color: #e91e63;
+}
+
+/* Image inside modal */
+.modal-image {
+  max-width: 100%;
+  max-height: 400px;
+  margin: 0 15px;
+  object-fit: cover;
+}
+
+/* Category, price, and other details */
+.category, .price, .description-modal, p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Description with View More/View Less toggle */
+.description-modal {
+  margin-bottom: 20px;
+}
+
+.view-more-less {
+  background-color: transparent;
+  border: none;
+  color: #131f64;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.view-more-less:hover {
+  text-decoration: underline;
+}
+
+/* Add to Cart button */
+.add-to-cart-button-modal {
+  background-color: #1d1d81;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.add-to-cart-button-modal:hover {
+  background-color: #0e7a63;
+}

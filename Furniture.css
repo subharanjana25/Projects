@@ -1,0 +1,188 @@
+/* Container for product listing */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual product card */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 15px;
+}
+
+.product-card h3{
+  color: black;
+  text-align: center;
+}
+
+/* Product image styling */
+.product-image {
+  width: 80%;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+/* Category and price styles */
+.product-details .category {
+  margin-top: 10px;
+  text-align: left;
+  font-size:1.1em;
+  color: #000000;
+
+}
+
+ .product-details .price {
+  text-align: left;
+  font-size: 1.1em;
+  color: #000000;
+ 
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Update button */
+.update-button {
+  background-color: #126024;
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #213688;
+  transform: scale(1.05);
+}
+
+
+/* General button hover effects */
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Modal container styling */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: 50px;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh; /* Ensures the modal doesn't take up too much vertical space */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enables scrolling when content exceeds modal height */
+  z-index: 1000; /* Ensures the modal stays above other content */
+}
+
+/* Modal overlay styling */
+.modal-overlay {
+  margin-top: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Darkens background */
+  z-index: 999; /* Sits below the modal itself */
+}
+
+/* Close button */
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Modal content styling */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Slideshow styles */
+.slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.slideshow-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #2f3134;
+}
+
+.modal-image {
+  margin-top: 50px;
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* View more/less button */
+.view-more-less {
+  background: none;
+  border: none;
+  color: #0a315b;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+/* General button styles in the modal */
+.add-to-cart-button-modal {
+  margin-top: 20px;
+  background-color: #126024;
+  color: white;
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart-button-modal:hover {
+  background-color: #213688;
+  transform: scale(1.05);
+}
+
+

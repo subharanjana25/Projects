@@ -1,0 +1,219 @@
+/* Order.css */
+
+.order-container {
+    margin-top: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.shipping-info,
+.order-details,
+.payment-details {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.shipping-info h2,
+.order-details h2,
+.payment-details h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Input Styles */
+.shipping-info input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Order Items */
+.order-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-info h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+.item-info p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Total Amount */
+.order-details h3 {
+    text-align: right;
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Payment Method Styles */
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-methods label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment-methods input {
+    margin-right: 10px;
+}
+
+/* Checkout Button */
+.checkout-button {
+    background-color: #28a745;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #174b23;
+    width: 200px;
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .step-tracker {
+        flex-direction: column;
+    }
+
+    .step {
+        margin-bottom: 10px;
+    }
+
+    .order-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .order-item img {
+        margin-bottom: 10px;
+    }
+
+    .item-info {
+        align-items: center;
+    }
+}
+
+
+/* Styling the container holding the checkbox */
+.shipping-info label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Style the checkbox itself */
+.shipping-info input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #07090b;
+    border-radius: 3px;
+    position: relative;
+    outline: none;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Checkmark for the checkbox */
+.shipping-info input[type="checkbox"]:checked {
+    background-color: #2b7452;
+    border-color: #d8d8da;
+}
+
+/* Custom checkmark */
+.shipping-info input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 8px;
+    height: 12px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Add hover effect */
+.shipping-info input[type="checkbox"]:hover {
+    border-color: #fcf7f7;
+    background-color: #147b4d;
+}
+
+/* Label text styles */
+.shipping-info label span {
+    color: #333;
+}
+
+
+.order-note {
+    background-color: #f8d7da; /* Light red background for visibility */
+    color: #721c24; /* Dark red text color */
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .order-note p {
+    margin: 0;
+  }
+  

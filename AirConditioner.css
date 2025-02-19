@@ -1,0 +1,60 @@
+.ac-maintenance {
+    margin-top: 50px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center align all text */
+}
+
+.ac-maintenance-title {
+    margin-top: 50px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ac-section-title, .ac-subtitle {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.ac-intro, .ac-section-text, .ac-tip-text {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.ac-tips-list {
+    text-align: center;
+    margin: 20px 0;
+    padding-left: 0; /* Remove default padding */
+}
+
+.ac-tips-list li {
+    text-align: center;
+    margin: 10px 0; /* Space between list items */
+}
+
+.download-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Space above button */
+}
+
+.download-button:hover {
+    background-color: #ffffff;
+    text-decoration: underline;
+}
+
+.ac-image {
+    max-width: 100%; /* Make images responsive */
+    height: fit-content; /* Maintain aspect ratio */
+    max-height: 200%;
+    margin: 20px 0; /* Space above and below images */
+    border-radius: 2px;
+}

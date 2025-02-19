@@ -1,0 +1,75 @@
+.signin-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #634087;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #e2dbe8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container .password-container {
+  position: relative;
+}
+
+.form-container .password-container .eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.form-container button {
+  padding: 10px;
+  border: none;
+  background-color: #634087;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-container button:hover
+{
+  background-color: #32184c;
+}
+.form-container p {
+  margin-top: 10px;
+}
+
+.form-container p a {
+  color: #634087;
+  text-decoration: none;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: green;
+  margin-bottom: 10px;
+}

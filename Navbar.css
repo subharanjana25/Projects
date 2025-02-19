@@ -1,0 +1,154 @@
+/* Set the navbar to full width and make sure it's fixed at the top */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* or any other color */
+  padding: 10px 10px;
+  height: 50px;
+  z-index: 1000;
+}
+
+/* Style for the left section with the logo */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the logo */
+.navbar-left .logo {
+  height: 40px;
+  border-radius: 30px;
+}
+
+/* Style the center links */
+.navbar-center {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.navbar-center a {
+  position: relative;
+  color: hsl(0, 13%, 95%);
+  margin: 0 20px;   
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-center a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: #52b1bd;
+  transition: width 0.3s ease;
+}
+
+.navbar-center a:hover {
+  color: #52b1bd;
+}
+
+.navbar-center a:hover::after {
+  width: 100%;
+}
+
+
+/* Style the right section with search, cart, and profile icons */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-link {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover .icon {
+  color: #52b1bd; /* Highlight color on hover */
+}
+
+/* Style the search form */
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 5px 10px;
+  background-color: #12529c; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #4984b9; /* Hover color for button */
+}
+
+/* For small screens, stack the navbar items */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-center {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .navbar-right {
+    margin-top: 10px;
+  }
+}
+
+
+/* Wrapper for the cart icon */
+.cart-icon-wrapper {
+  position: relative;
+}
+
+.icon {
+  font-size: 24px; /* Adjust icon size if needed */
+  color: #ffffff;
+  position: relative;
+}
+
+/* Badge for displaying the cart item count */
+.badge {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  background-color: red; /* Badge background color */
+  color: white; /* Text color inside the badge */
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px; /* Adjust size */
+  font-weight: bold;
+  line-height: 1;
+}

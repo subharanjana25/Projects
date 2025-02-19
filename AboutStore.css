@@ -1,0 +1,185 @@
+.about-store {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.intro-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.animated-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  animation: slideInDown 1s ease;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.furniture-gallery {
+  padding: 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.furniture-item {
+  text-align: center;
+  width: 30%;
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+
+.furniture-item:hover {
+  transform: scale(1.05);
+}
+
+.furniture-img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.furniture-desc {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.store-video-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.store-video {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.about-store-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-icon {
+  font-size: 2rem;
+}
+
+.stat-info {
+  margin-top: 5px;
+}
+
+.contact-us {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.contact-map iframe{
+  width: 400px;
+  height: 400px;
+}
+
+.contact-item {
+  margin-bottom: 15px;
+  margin-right: 250px;
+}
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-fade {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+
+
+
+
+
+
+/* Circle images with animation */
+.image-animation-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.animated-images-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.animated-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  animation: circleAnimation 3s infinite alternate;
+}
+
+.circle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Image hover effect */
+.animated-circle:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Circle animation */
+@keyframes circleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
